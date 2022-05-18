@@ -18,13 +18,34 @@
 
 * Netflix Prize Dataset 
 
+-------- K = 1 --------
+NDCG@k:	0.555085
+Recall@k:	0.555085
+MNAP@K:	0.555085
+-------- K = 5 --------
+NDCG@k:	0.483373
+Recall@k:	0.466102
+MNAP@K:	0.393037
+-------- K = 10 --------
+NDCG@k:	0.449662
+Recall@k:	0.426271
+MNAP@K:	0.330420
+-------- K = 15 --------
+NDCG@k:	0.428659
+Recall@k:	0.402825
+MNAP@K:	0.295096
+-------- K = 20 --------
+NDCG@k:	0.412252
+Recall@k:	0.384746
+MNAP@K:	0.271345
+
 | Model  | ndcg_at_k | mnap_at_k | recall_at_k |
 | ------------- | ------------- | ------------- | ------------- |
 | ALS |  **0.097816, 0.100579, 0.103228, 0.106354, 0.109209** | **0.097816, 0.069687, 0.059904, 0.055404, 0.052965** | **0.097816, 0.107920, 0.116659, 0.124860, 0.131985** |
 | SVD | **0.045000, 0.048177, 0.050426, 0.062545, 0.069978** | **0.002045, 0.005076, 0.007072, 0.009857, 0.011935** | **0.045000, 0.047468, 0.050443, 0.124860, 0.131985** |
-| SVDpp | Content Cell  | Content Cell  | Content Cell  |
+| SVDpp |  **0.050200, 0.052975, 0.055069, 0.067251, 0.074632** | **0.002147, 0.005234, 0.007281, 	0.010087, 0.012230** | **0.050200,	0.052178, 0.054946, 0.069866, 0.074400** |
 | LightFM | Content Cell  | Content Cell  | Content Cell  |
-| BPR | Content Cell  | Content Cell  | Content Cell  |
+| BPR | **0.555085, 0.483373, 0.449662, 0.428659, 0.412252** | **0.555085, 0.393037, 0.330420, 	0.295096, 0.271345** | **0.555085,	0.466102, 0.426271, 0.402825, 0.384746** |
 | EMF | Content Cell  | Content Cell  | Content Cell  |
 
 * MovieLens Dataset 
@@ -35,5 +56,5 @@
 | SVD | Content Cell  | Content Cell  | Content Cell  |
 | SVDpp | Content Cell  | Content Cell  | Content Cell  |
 | LightFM | Content Cell  | Content Cell  | Content Cell  |
-| BPR | Content Cell  | Content Cell  | Content Cell  |
+| BPR | **0.542373, 0.467349,0.441273, 0.420986, 0.402739** | **0.542373, 0.376836, 0.323525, 0.290566, 0.265794** | **0.542373, 0.449153, 0.420763, 0.397458, 0.376059** |
 | EMF | Content Cell  | Content Cell  | Content Cell  |
