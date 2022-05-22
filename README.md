@@ -11,7 +11,7 @@
 
 Все метрики считались при k = 1,5,10,15,20. 
 
-* **Anime Recommendation Dataset **
+* **Anime Recommendation Dataset**
 
 | Model  | ndcg_at_k | mnap_at_k | recall_at_k |
 | ------------- | ------------- | ------------- | ------------- |
